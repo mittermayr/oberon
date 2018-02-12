@@ -1,0 +1,5 @@
+FILE=oberon.pid
+if [ -f $FILE ]; then
+  pkill -F oberon.pid
+fi
+ruby oberon.rb &
